@@ -20,6 +20,8 @@ use Illuminate\Contracts\Auth\CanResetPassword;
  */
 class User extends Model implements Authenticatable, CanResetPassword
 {
+    protected $connection = 'wordpress2';
+
     const CREATED_AT = 'user_registered';
     const UPDATED_AT = null;
 

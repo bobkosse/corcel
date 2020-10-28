@@ -13,6 +13,8 @@ use Corcel\Model\User;
  */
 class UserMeta extends Meta
 {
+    protected $connection = 'wordpress2';
+    
     /**
      * @var string
      */
